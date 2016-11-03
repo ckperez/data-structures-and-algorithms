@@ -6,17 +6,25 @@ using System;
         {
             for (int i = 1; i < 101; i++)
             {
-                if (i % 15 == 0)
+
+            bool FIZZ = i % 3 == 0;
+            bool BUZZ = i % 5 == 0;
+            bool FIZZBUZZ = i % 15 == 0;
+            string fizz = "Fizz";
+            string buzz = "Buzz";
+            string fizzbuzz = "FizzBuzz";
+
+                if (FIZZBUZZ)
                 {
-                    Console.WriteLine("FizzBuzz");
+                    Console.WriteLine(fizzbuzz);
                 }
-                else if(i % 5 == 0)
+                else if(BUZZ)
                 {
-                    Console.WriteLine("Buzz");
+                    Console.WriteLine(buzz);
                 }
-                else if(i % 3 == 0)
+                else if(FIZZ)
                 {
-                    Console.WriteLine("Fizz");
+                    Console.WriteLine(fizz);
                 }
                 else
                 {
